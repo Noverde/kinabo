@@ -1,0 +1,8 @@
+test:
+  bradesco:
+    nome_empresa: 'FIDC TESTE'
+    numero_empresa: '4359923'
+development:
+  bradesco:
+    nome_empresa: 'FIDC TESTE'
+    numero_empresa: '4359923'
