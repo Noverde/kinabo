@@ -1,4 +1,4 @@
-module Cnabs
+module Kinabo
   module Utils
     def justify_string(string, length)
       I18n.transliterate(string.to_s).truncate(length, omission: '').ljust(length, ' ')
@@ -13,7 +13,7 @@ module Cnabs
     end
 
     def fill_sequencial(lines)
-      lines.map.with_index(1) { |line, index| line + justify_number(index, 6) }.join("\n")
+      lines.map.with_index(1) { |line, index| line + justify_number(index, 6) }.join("\r\n") + "\r\n"
     end
   end
 end

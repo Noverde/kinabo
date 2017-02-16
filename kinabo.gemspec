@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'cnabs/version'
+require 'kinabo/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "cnabs"
-  spec.version       = Cnabs::VERSION
+  spec.name          = "kinabo"
+  spec.version       = Kinabo::VERSION
   spec.authors       = ["Rafael Izidoro"]
   spec.email         = ["izidoro.rafa@gmail.com"]
 

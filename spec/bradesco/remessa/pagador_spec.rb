@@ -1,8 +1,8 @@
 require 'spec_helper'
 require 'support/bradesco/remessa_mock'
 
-describe Cnabs::Bradesco::Remessa::Pagador do
-  subject(:pagador) { Cnabs::Bradesco::Remessa::Pagador.new(pagador_hash) }
+describe Kinabo::Bradesco::Remessa::Pagador do
+  subject(:pagador) { Kinabo::Bradesco::Remessa::Pagador.new(pagador_hash) }
 
   let(:pagador_hash) { Bradesco::RemessaMock.pagador }
 

@@ -1,12 +1,12 @@
 require 'erb'
 require 'yaml'
 
-module Cnabs
+module Kinabo
   class Configuration
     attr_accessor :environment, :logger, :config_file_path
 
     def config_file_path
-      @config_file_path || 'config/cnabs.yml'
+      @config_file_path || 'config/kinabo.yml'
     end
 
     def environment

@@ -1,8 +1,8 @@
 require 'spec_helper'
 require 'support/bradesco/remessa_mock'
 
-describe Cnabs::Bradesco::Remessa::Mensagem do
-  subject(:mensagem) { Cnabs::Bradesco::Remessa::Mensagem.new(mensagem_hash) }
+describe Kinabo::Bradesco::Remessa::Mensagem do
+  subject(:mensagem) { Kinabo::Bradesco::Remessa::Mensagem.new(mensagem_hash) }
 
   let(:mensagem_hash) { Bradesco::RemessaMock.mensagem }
 

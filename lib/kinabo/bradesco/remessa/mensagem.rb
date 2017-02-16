@@ -1,8 +1,8 @@
-module Cnabs
+module Kinabo
   module Bradesco
     module Remessa
       class Mensagem < Hashie::Dash
-        include Cnabs::Utils
+        include Kinabo::Utils
 
         property :mensagem_1
         property :mensagem_2
@@ -37,19 +37,19 @@ module Cnabs
         end
 
         def carteira
-          Cnabs.config.bradesco[:carteira]
+          Kinabo.config.bradesco[:carteira]
         end
 
         def agencia
-          Cnabs.config.bradesco[:agencia]
+          Kinabo.config.bradesco[:agencia]
         end
 
         def conta_corrente
-          Cnabs.config.bradesco[:conta_corrente].split('-')[0]
+          Kinabo.config.bradesco[:conta_corrente].split('-')[0]
         end
 
         def conta_corrente_dv
-          Cnabs.config.bradesco[:conta_corrente].split('-')[1]
+          Kinabo.config.bradesco[:conta_corrente].split('-')[1]
         end
       end
     end

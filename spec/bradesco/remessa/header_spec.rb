@@ -1,8 +1,8 @@
 require 'spec_helper'
 require 'support/bradesco/remessa_mock'
 
-describe Cnabs::Bradesco::Remessa::Header do
-  subject(:header) { Cnabs::Bradesco::Remessa::Header.new(header_hash) }
+describe Kinabo::Bradesco::Remessa::Header do
+  subject(:header) { Kinabo::Bradesco::Remessa::Header.new(header_hash) }
 
   let(:header_hash) { Bradesco::RemessaMock.header }
 

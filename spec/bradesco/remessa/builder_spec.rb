@@ -1,8 +1,8 @@
 require 'spec_helper'
 require 'support/bradesco/remessa_mock'
 
-describe Cnabs::Bradesco::Remessa::Builder do
-  subject(:builder) { Cnabs::Bradesco::Remessa::Builder.new(builder_hash) }
+describe Kinabo::Bradesco::Remessa::Builder do
+  subject(:builder) { Kinabo::Bradesco::Remessa::Builder.new(builder_hash) }
 
   let(:header_hash) { Bradesco::RemessaMock.header }
   let(:boletos_hash) { Bradesco::RemessaMock.boletos }

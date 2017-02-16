@@ -1,11 +1,11 @@
-module Cnabs
+module Kinabo
   module Bradesco
     module Remessa
       class Header < Hashie::Dash
-        include Cnabs::Utils
+        include Kinabo::Utils
 
-        property :codigo_empresa, required: true, default: Cnabs.config.bradesco&.dig(:numero_empresa)
-        property :nome_empresa, required: true, default: Cnabs.config.bradesco&.dig(:nome_empresa)
+        property :codigo_empresa, required: true, default: Kinabo.config.bradesco&.dig(:numero_empresa)
+        property :nome_empresa, required: true, default: Kinabo.config.bradesco&.dig(:nome_empresa)
         property :data_gravacao, required: true
         property :sequencial, required: true
 

@@ -1,4 +1,4 @@
-module Cnabs
+module Kinabo
   module Bradesco
     module Remessa
       class Boleto < Hashie::Dash

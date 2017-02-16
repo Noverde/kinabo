@@ -1,4 +1,4 @@
-module Cnabs
+module Kinabo
   module Bradesco
     class Retorno
       def initialize(path)
