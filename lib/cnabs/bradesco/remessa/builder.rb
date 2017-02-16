@@ -11,7 +11,7 @@ module Cnabs
         def build
           lines = [header, boletos, Trailler.new].flatten.map(&:build).join("\r\n")
 
-          fill_sequencials(lines)
+          fill_sequencial(lines)
         end
       end
     end

@@ -5,7 +5,7 @@ module Cnabs
         include Hashie::Extensions::Dash::Coercion
 
         property :transacao, coerce: Transacao, required: true
-        # property :mensagem, coerce: Mensagem
+        property :mensagem, coerce: Mensagem
         # property :pagador, coerce: Pagador
 
         def build

@@ -12,7 +12,7 @@ module Cnabs
       ("%.#{decimal_places}f" % (value || 0)).gsub(/[.,]/, '').rjust(length, '0')
     end
 
-    def fill_sequencials(lines)
+    def fill_sequencial(lines)
       lines.each_line.with_index(1).map { |line, index| line % justify_number(index, 6) }
     end
   end
