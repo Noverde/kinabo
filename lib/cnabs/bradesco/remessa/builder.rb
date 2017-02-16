@@ -9,9 +9,9 @@ module Cnabs
         property :boletos, coerce: Array[Boleto], required: true
 
         def build
-          lines = [header, boletos, Trailler.new].flatten.map(&:build).join("\r\n")
+          lines = [header, boletos, Trailler.new].flatten.map(&:build)
 
-          fill_sequencial(lines)
+          fill_sequencial(lines.flatten)
         end
       end
     end

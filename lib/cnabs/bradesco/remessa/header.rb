@@ -22,7 +22,6 @@ module Cnabs
           parts << 'MX'
           parts << justify_number(sequencial, 7)
           parts << justify_string('', 277)
-          parts << "%s"
         end
       end
     end

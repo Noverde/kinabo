@@ -7,7 +7,7 @@ describe Cnabs::Bradesco::Remessa::Pagador do
   let(:pagador_hash) { Bradesco::RemessaMock.pagador }
 
   describe '#build' do
-    let(:line) { '7ENDERECO SACADOR     - AREIAS                50781000RECIFE              PE                                                                                                                                                                                                                                                                                                  0090028901477922200003487571%s' }
+    let(:line) { '7ENDERECO SACADOR     - AREIAS                50781000RECIFE              PE                                                                                                                                                                                                                                                                                                  0090028901477922200003487571' }
 
     it 'builds the "pagador" part' do
       expect(pagador.build).to eq(line)

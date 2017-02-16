@@ -86,8 +86,6 @@ module Cnabs
           parts << justify_number(cep_pagador, 5)
           parts << justify_number(cep_sufixo_pagador, 3)
           parts << justify_string(mensagem_2, 60)
-
-          parts << "%s" # sequencial
         end
 
         def id_empresa

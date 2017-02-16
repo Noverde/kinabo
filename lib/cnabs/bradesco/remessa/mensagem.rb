@@ -34,8 +34,6 @@ module Cnabs
           parts << justify_string(conta_corrente_dv, 1)
           parts << justify_number(nosso_numero, 11)
           parts << justify_string(nosso_numero_dv, 1)
-
-          parts << "%s" # sequencial
         end
 
         def carteira

@@ -9,7 +9,7 @@ module Cnabs
         property :pagador, coerce: Pagador
 
         def build
-          [transacao].map(&:build)
+          [transacao, mensagem, pagador].map(&:build)
         end
       end
     end

@@ -7,11 +7,10 @@ describe Cnabs::Bradesco::Remessa::Header do
   let(:header_hash) { Bradesco::RemessaMock.header }
 
   describe '#build' do
-    let(:line) { '01REMESSA01COBRANCA       00000000000004359923FIDC TESTE                    237BRADESCO       070217        MX0007896                                                                                                                                                                                                                                                                                     000001' }
-    let(:sequencial) { '000001' }
+    let(:line) { '01REMESSA01COBRANCA       00000000000004359923FIDC TESTE                    237BRADESCO       070217        MX0007896                                                                                                                                                                                                                                                                                     ' }
 
     it 'builds the header part' do
-      expect(header.build % sequencial).to eq(line)
+      expect(header.build).to eq(line)
     end
   end
 end

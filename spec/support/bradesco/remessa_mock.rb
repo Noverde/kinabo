@@ -15,7 +15,8 @@ module Bradesco
       def boleto
         {
           transacao: transacao,
-          mensagem: mensagem
+          mensagem: mensagem,
+          pagador: pagador
         }
       end
 

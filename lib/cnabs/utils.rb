@@ -13,7 +13,7 @@ module Cnabs
     end
 
     def fill_sequencial(lines)
-      lines.each_line.with_index(1).map { |line, index| line % justify_number(index, 6) }
+      lines.map.with_index(1) { |line, index| line + justify_number(index, 6) }.join("\n")
     end
   end
 end

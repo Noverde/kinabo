@@ -8,12 +8,11 @@ describe Cnabs::Bradesco::Remessa::Builder do
   let(:boletos_hash) { Bradesco::RemessaMock.boletos }
   let(:builder_hash) { { header: header_hash, boletos: boletos_hash } }
 
+  let(:fixture) { File.open('spec/fixtures/remessa/bradesco.rem').read }
+
   describe '#build' do
     it 'builds all the parts' do
-
-      builder.build
-
-      require 'pry'; binding.pry
+      expect(builder.build).to eq(fixture)
     end
   end
 end

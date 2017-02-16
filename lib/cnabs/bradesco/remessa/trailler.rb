@@ -8,7 +8,6 @@ module Cnabs
           parts = '9'
 
           parts << justify_string('', 393)
-          parts << "%s"
         end
       end
     end
