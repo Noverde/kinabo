@@ -48,6 +48,17 @@ module Bradesco
           nosso_numero_dv: '1',
         }
       end
+
+      def pagador
+        {
+          endereco: 'ENDERECO SACADOR     - AREIAS',
+          cep: '50781000',
+          cidade: 'RECIFE',
+          uf: 'PE',
+          nosso_numero: '20000348757',
+          nosso_numero_dv: '1',
+        }
+      end
     end
   end
 end

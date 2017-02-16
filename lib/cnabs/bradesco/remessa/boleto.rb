@@ -6,7 +6,7 @@ module Cnabs
 
         property :transacao, coerce: Transacao, required: true
         property :mensagem, coerce: Mensagem
-        # property :pagador, coerce: Pagador
+        property :pagador, coerce: Pagador
 
         def build
           [transacao].map(&:build)

@@ -15,9 +15,10 @@ require 'cnabs/configuration'
 require 'active_support/inflector/transliterate'
 require 'active_support/core_ext/string'
 
+require 'cnabs/bradesco/remessa/header'
 require 'cnabs/bradesco/remessa/transacao'
 require 'cnabs/bradesco/remessa/mensagem'
-require 'cnabs/bradesco/remessa/header'
+require 'cnabs/bradesco/remessa/pagador'
 require 'cnabs/bradesco/remessa/trailler'
 require 'cnabs/bradesco/remessa/boleto'
 
