@@ -54,7 +54,7 @@ module Kinabo
             numero_empresa: pos(entry_line, '4-17'),
             id_empresa: pos(entry_line, '21-37'),
             numero_controle: pos(entry_line, '38-62'),
-            id_titulo: pos(entry_line, '71-82'),
+            nosso_numero: pos(entry_line, '71-82'),
             indicador_rateio: pos(entry_line, '105-105'),
             carteira: pos(entry_line, '108-108'),
             id_ocorrencia: pos(entry_line, '109-110'),
