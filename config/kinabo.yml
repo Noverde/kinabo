@@ -2,7 +2,7 @@ test:
   bradesco:
     carteira: 09
     nome_empresa: FIDC TESTE
-    numero_empresa: 4359923
+    convenio: 4359923
     conta_corrente: 0147792-2
     agencia: 00289
 
@@ -10,6 +10,6 @@ development:
   bradesco:
     carteira: 09
     nome_empresa: FIDC TESTE
-    numero_empresa: 4359923
+    convenio: 4359923
     conta_corrente: 0147792-2
     agencia: 00289
