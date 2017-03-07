@@ -8,7 +8,12 @@ module Kinabo
   end
 end
 
-require 'hashie'
+# work around logger spam from hashie
+# https://github.com/intridea/hashie/issues/394
+require "hashie"
+require "hashie/logger"
+Hashie.logger = Logger.new(nil)
+
 require "kinabo/version"
 require 'kinabo/utils'
 require 'kinabo/configuration'
