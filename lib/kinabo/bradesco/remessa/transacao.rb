@@ -16,7 +16,7 @@ module Kinabo
         property :nosso_numero
         property :nosso_numero_dv
         property :desconto_por_dia
-        property :emissao, default: 1
+        property :emissao, default: 2
         property :debito_automatico, default: 'N'
         property :rateio
         property :aviso_debito_automatico, default: '2'
