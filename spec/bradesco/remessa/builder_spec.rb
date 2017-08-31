@@ -16,4 +16,3 @@ describe Kinabo::Bradesco::Remessa::Builder do
     end
   end
 end
-

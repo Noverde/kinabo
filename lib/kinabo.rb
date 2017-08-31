@@ -30,6 +30,7 @@ require 'kinabo/bradesco/remessa/builder'
 
 require 'kinabo/bradesco/retorno'
 
-require 'fromtis/remessa/header'
-require 'fromtis/remessa/transacao'
-require 'fromtis/remessa/trailler'
+require 'kinabo/fromtis/remessa/header'
+require 'kinabo/fromtis/remessa/transacao'
+require 'kinabo/fromtis/remessa/trailler'
+require 'kinabo/fromtis/remessa/builder'

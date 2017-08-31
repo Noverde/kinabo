@@ -5,6 +5,13 @@ test:
     convenio: 4359923
     conta_corrente: 0147792-2
     agencia: 00289
+  fromtis:
+    nome_empresa: FIDC
+    convenio: '07652226000116'
+    nome_cedente: 'RUBYBANK'
+    cnpj_cedente: '59156195000106'
+    nome_banco: BANCO PETRA
+    codigo_banco: 094
 
 development:
   bradesco:
@@ -13,3 +20,10 @@ development:
     convenio: 4359923
     conta_corrente: 0147792-2
     agencia: 00289
+  fromtis:
+    nome_empresa: FIDC
+    convenio: '07652226000116'
+    nome_cedente: 'RUBYBANK'
+    cnpj_cedente: '59156195000106'
+    nome_banco: BANCO PETRA
+    codigo_banco: 094
