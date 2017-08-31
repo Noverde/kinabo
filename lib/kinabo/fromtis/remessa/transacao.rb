@@ -25,18 +25,18 @@ module Kinabo
         property :especie, required: true, default: '01'
         property :data_emissao, required: true
 
-        property :tipo_inscricao_cedente, required: true, default: '02'
-        property :termo_cessao, required: true
+        property :termo_cessao, default: '0000000000000000000'
         property :valor_parcela, required: true
         property :valor_abatimento
         property :tipo_inscricao_pagador, required: true, default: '01'
         property :inscricao_pagador, required: true
         property :nome_pagador, required: true
-        property :endereco_pagador, required: true
-        property :nota_fiscal
-        property :serie_nota_fiscal
-        property :cep_pagador, required: true
-        property :cedente
+        property :endereco_pagador
+        property :nota_fiscal, default: '000000000'
+        property :serie_nota_fiscal, default: '000'
+        property :cep_pagador
+        property :nome_cedente, required: true, default: Kinabo.config.fromtis&.dig(:nome_cedente)
+        property :cnpj_cedente, required: true, default: Kinabo.config.fromtis&.dig(:cnpj_cedente)
         property :chave_nota_fiscal
 
         def build
@@ -49,12 +49,12 @@ module Kinabo
           parts << justify_number(modalidade_operacao, 4)
           parts << justify_number(natureza_operacao, 2)
           parts << justify_number(origem_recurso, 4)
-          parts << justify_number(risco_operacao, 2)
+          parts << justify_string(risco_operacao, 2)
 
           parts << '0'
 
           parts << justify_string(numero_controle, 25)
-          parts << justify_number(numero_banco, 3)
+          parts << justify_number(codigo_banco_c3, 3)
 
           parts << '00000'
 
@@ -62,11 +62,11 @@ module Kinabo
           parts << justify_string(nosso_numero_dv, 1)
           parts << justify_number(valor_pago, 10)
 
-          parts << '0 '
+          parts << '1 '
 
           parts << justify_number(data_liquidacao, 6)
 
-          parts << '     0  '
+          parts << '        '
 
           parts << justify_number(ocorrencia, 2)
           parts << justify_string(numero_documento, 10)
@@ -82,9 +82,7 @@ module Kinabo
 
           parts << '000'
 
-          parts << justify_string(tipo_inscricao_cedente, 2)
-
-          parts << '00000000000'
+          parts << '02000000000000'
 
           parts << justify_string(termo_cessao, 19)
           parts << justify_number(valor_parcela, 13)
@@ -99,7 +97,8 @@ module Kinabo
           parts << justify_string(serie_nota_fiscal, 3)
 
           parts << justify_number(cep_pagador, 8)
-          parts << justify_string(cedente, 60)
+          parts << justify_string(nome_cedente, 46)
+          parts << justify_string(cnpj_cedente, 14)
           parts << justify_string(chave_nota_fiscal, 44)
         end
       end

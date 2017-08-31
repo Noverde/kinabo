@@ -17,6 +17,10 @@ module Kinabo
       config[:bradesco]
     end
 
+    def fromtis
+      config[:fromtis]
+    end
+
     private
 
     def config
