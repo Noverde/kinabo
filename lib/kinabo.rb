@@ -29,3 +29,7 @@ require 'kinabo/bradesco/remessa/boleto'
 require 'kinabo/bradesco/remessa/builder'
 
 require 'kinabo/bradesco/retorno'
+
+require 'fromtis/remessa/header'
+require 'fromtis/remessa/transacao'
+require 'fromtis/remessa/trailler'
