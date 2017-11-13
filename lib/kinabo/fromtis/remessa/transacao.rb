@@ -46,7 +46,7 @@ module Kinabo
 
           parts << justify_number(coobrigacao, 2)
           parts << justify_number(caracteristica_especial, 2)
-          parts << justify_number(modalidade_operacao, 4)
+          parts << justify_string(modalidade_operacao, 4)
           parts << justify_number(natureza_operacao, 2)
           parts << justify_number(origem_recurso, 4)
           parts << justify_string(risco_operacao, 2)
